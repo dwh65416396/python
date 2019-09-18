@@ -6,7 +6,8 @@ def add_num(img):
     fillcolor = "#ff0000"
     width, height = img.size
     draw.text((width-40, 0), '99', font=myfont, fill=fillcolor)
-    img.save('result.jpg','jpeg')
+    imgnew = img.convert('RGB')
+    img.save('result.jpg')
 
     return 0
 if __name__ == '__main__':
